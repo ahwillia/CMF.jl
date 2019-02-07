@@ -1,11 +1,13 @@
-include("./mult.jl")  # MultUpdate
-include("./hals.jl")  # HALSUpdate
+include("./mult.jl")  # Mult
+include("./hals.jl")  # HALS
+include("./projals.jl")  #ProjALS
 include("./common.jl")
 
 
 ALGORITHMS = Dict(
     "mult" => MULT,
-    "hals" => HALS
+    "hals" => HALS,
+    "projals" => ProjALS,
 )
 
 struct CNMF_results
